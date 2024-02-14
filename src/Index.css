@@ -1,0 +1,100 @@
+body{
+    margin: 0;
+    background-color: lightgray;
+}
+
+.navbar {
+  background-color: black;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,1);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.navtitle {
+    font-size: 30px;
+    color: pink;
+    padding: 10px;
+  }
+  
+  .navtext {
+    color: inherit;
+    
+  }
+  
+  .navtext:hover {
+    color: pink;
+  }
+  
+  .navbar ul {
+    padding: 0;
+    margin: 0;
+    list-style-type:none;
+    display: flex;
+    gap: 1 rem;
+  }
+  
+.navbar a {
+  color: inherit;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+.container {
+  margin: 1rem;
+  text-align: center;
+}
+
+.pageHeader {
+  color: black;
+}
+
+  .blogpost {
+    color: black;
+    background-color: pink;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 20px;
+    border-width: 5px;
+    border-color: black;
+    border-style: double;
+  
+  }
+  
+  .comment {
+    background-color: grey;
+    font-size: 15px;
+    padding: 5px;
+    border-width: 3px;
+    border-color: black;
+    border-style: double;
+  }
+  
+  button {
+    color: black;
+    background-color: white;
+  }
+  
+  .textbox {
+    margin: 2px;
+  }
+  
+  .links {
+    display: flex;
+    flex-direction: row;
+    align-items:end;
+    justify-content: right;
+    margin-left: auto;
+    padding-right: 30px;  
+  }
+
+  img{
+    width: 300px;
+  }
