@@ -5,6 +5,7 @@ import Home from './Pages/Home';
 import Posts from './Pages/Posts';
 import Pictures from './Pages/Pictures';
 import About from './Pages/About';
+import BlogList from './Components/BlogList';
 import { BrowserRouter as Router, Route, Switch, Link, useParams } from 'react-router-dom/cjs/react-router-dom';
 
 
@@ -32,32 +33,6 @@ export default function App() {
     </>
   );
 }
-
-// let e = React.createElement;
-
-// export default function App() {
-
-//   const posts = [
-//       {
-//         id:1,
-//         title: 'A post',
-//         date: '2-12-2024',
-//         content: 'Here it is'
-//       },
-//       {
-//         id:2,
-//         title: 'A post 2',
-//         date: '2-12-2024',
-//         content: 'Here it is again'
-//       },
-//       {
-//         id:3,
-//         title: 'A post 3',
-//         date: '2-12-2024',
-//         content: 'Here it is again again'
-//       }
-
-//   ];
 
 //   return e('div', {class:'container'},
 //           e(NavBar, {}, null)

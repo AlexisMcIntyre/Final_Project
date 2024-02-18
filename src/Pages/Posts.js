@@ -1,20 +1,33 @@
-import BlogPost from "../Components/BlogPost";
+import React from "react";
+import { Blog } from "../Components/Blog";
 import Comment from "../Components/Comment";
+import { travelApi } from "../TravelApi";
 
-export default function Posts() {
+export default class Posts extends React.Component {
+    state = {
+        blogs: []
 
-    let commentOne = {
-        username: "Renato",
-        date: "12-1-2020",
-        content: "I'm a Brasilian",
     };
-
-    return (
-        <>
-            <h1 className="pageHeader">Posts</h1>
-            <BlogPost />
-            <BlogPost />
-            <BlogPost />
-        </>
-    );
+   
+    componentDidMount() {
+        this.fetchBlogs();
+    };
+    
+    fetchBlogs = async () => {
+        const blogs = await travelApi.get();
+        this.setState({ blogs });
+    };
+   
+    render () {
+        return (
+            <>
+                <h1 className="pageHeader">Posts</h1>
+                {
+                    this.state.blogs.map((blog) => (
+                        <Blog blog={blog}/>
+                    ))
+                }
+            </>
+        );
+    }
 }
