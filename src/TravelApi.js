@@ -14,12 +14,13 @@ class TravelApi {
 
     put = async (blog) => {
         try{
-        const resp = await fetch(`${TRAVEL_ENDPOINT}'/blog/${blog.id}`, {
-        method: 'PUT',
-        headers: {
+            console.log(blog)
+            const resp = await fetch(`${TRAVEL_ENDPOINT}/blog/${blog.id}`, {
+            method: 'PUT',
+            headers: {
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify(blog)
+            body: JSON.stringify(blog)
         });
         return await resp.json();
         } catch (e) {

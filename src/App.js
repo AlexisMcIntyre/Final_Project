@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
 import NavBar from './Components/NavBar';
-import Home from './Pages/Home';
-import Posts from './Pages/Posts';
-import Pictures from './Pages/Pictures';
-import About from './Pages/About';
-import BlogList from './Components/BlogList';
+import HomePage from './Pages/HomePage';
+import BlogsPagePage from './Pages/BlogsPage';
+import PicturesPage from './Pages/PicturesPage';
+import AboutPage from './Pages/AboutPage';
 import { BrowserRouter as Router, Route, Switch, Link, useParams } from 'react-router-dom/cjs/react-router-dom';
+import BlogsPage from './Pages/BlogsPage';
 
 
 export default function App() {
@@ -16,17 +16,17 @@ export default function App() {
       <NavBar />
       <div className="container">
         <Switch>
-          <Route exact path="/posts">
-            <Posts />
+          <Route exact path="/blogs">
+            <BlogsPage />
           </Route>
           <Route exact path="/pictures">
-            <Pictures />
+            <PicturesPage />
           </Route>
           <Route exact path="/about">
-            <About />
+            <AboutPage />
           </Route>
           <Route path="/">
-            <Home />
+            <HomePage />
           </Route>
         </Switch>
       </div>

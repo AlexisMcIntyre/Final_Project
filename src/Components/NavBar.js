@@ -7,7 +7,7 @@ export default function Navbar() {
             <Link to="/" className="navtitle">Alexis's Travel Blog</Link>
             <ul>
                 <li>
-                    <Link to="/posts" className="navtext">Posts</Link>
+                    <Link to="/blogs" className="navtext">Blogs</Link>
                 </li>     
                 <li>   
                     <Link to="/pictures" className="navtext">Pictures</Link>
