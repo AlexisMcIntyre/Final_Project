@@ -1,14 +1,12 @@
 import React from 'react';
 
-
-export default class TextBox extends React.Component {
-    render() {
-        return (
-            <div className="textbox">
-                <h1>{this.props.title}</h1>
-                <h4>{this.props.date}</h4>
-                <p>{this.props.content}</p>
+export const TextBox = (props) => {
+    // const {text, setText} = props; //house is all data passed in for house, updateHouse is the method being passed in (called from child class component)
+    
+    return (
+            <div className="textbox">    
+                <p>{props.loc}</p>
+                <p>{props.desc}</p>
             </div>
-        );
-    }
-}
+    )
+};

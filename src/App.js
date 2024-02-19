@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 import NavBar from './Components/NavBar';
 import HomePage from './Pages/HomePage';
-import BlogsPagePage from './Pages/BlogsPage';
 import PicturesPage from './Pages/PicturesPage';
 import AboutPage from './Pages/AboutPage';
 import { BrowserRouter as Router, Route, Switch, Link, useParams } from 'react-router-dom/cjs/react-router-dom';
