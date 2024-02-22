@@ -1,11 +1,13 @@
 import React from 'react';
-import './App.css';
+// import './App.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './Components/NavBar';
 import HomePage from './Pages/HomePage';
 import PicturesPage from './Pages/PicturesPage';
 import AboutPage from './Pages/AboutPage';
 import { BrowserRouter as Router, Route, Switch, Link, useParams } from 'react-router-dom/cjs/react-router-dom';
 import BlogsPage from './Pages/BlogsPage';
+import RecipesPage from './Pages/RecipesPage';
 
 
 export default function App() {
@@ -20,6 +22,9 @@ export default function App() {
           </Route>
           <Route exact path="/pictures">
             <PicturesPage />
+          </Route>
+          <Route exact path="/recipes">
+            <RecipesPage />
           </Route>
           <Route exact path="/about">
             <AboutPage />

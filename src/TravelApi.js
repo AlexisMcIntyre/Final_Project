@@ -30,5 +30,3 @@ class TravelApi {
 }
 
 export const travelApi = new TravelApi();
-
-//above I have to create an instance of the API handler class, so that this instance can be imported and used with other components

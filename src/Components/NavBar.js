@@ -12,6 +12,9 @@ export default function Navbar() {
                 <li>   
                     <Link to="/pictures" className="navtext">Pictures</Link>
                 </li>
+                <li>   
+                    <Link to="/recipes" className="navtext">Recipes</Link>
+                </li>
                 <li>
                     <Link to="/about" className="navtext">About</Link>
                 </li>
