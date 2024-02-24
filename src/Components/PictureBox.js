@@ -11,20 +11,17 @@ export const PictureBox = (props) => {
             <div className="picturebox">    
                 <Container>
                     <Row>
-                        <Col xs={6} md={3}>
-                        <Image src={props.num1} rounded />
+                        <Col xs={3} md={3}>
+                        <Image className="gallery" src={props.num1} rounded fluid />
                         </Col>
-                        <Col xs={6} md={3}>
-                        <Image src={props.num2} rounded />
+                        <Col xs={3} md={3}>
+                        <Image className="gallery"  src={props.num2} rounded />
                         </Col>
-                        <Col xs={6} md={3}>
-                        <Image src={props.num3} rounded />
+                        <Col xs={3} md={3}>
+                        <Image className="gallery"  src={props.num3} rounded />
                         </Col>
-                        <Col xs={6} md={3}>
-                        <Image src={props.num4} rounded />
-                        </Col>
-                        <Col xs={6} md={3}>
-                        <Image src={props.num5} rounded />
+                        <Col xs={3} md={3}>
+                        <Image className="gallery"  src={props.num4} rounded />
                         </Col>
                     </Row>
                 </Container>

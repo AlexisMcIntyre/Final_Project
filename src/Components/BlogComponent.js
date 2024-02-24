@@ -15,18 +15,18 @@ export const BlogComponent = (props) => {
             ...blog, 
             comments: blog.comments.filter((_,i) => i !== commentId)
         };
-        updateBlog(updatedBlog); //doing to pass updated house into the update house method that was passed down (will call the put method on the houses API, thus it will call the HTTP request to update)
+        updateBlog(updatedBlog);
     }
 
     return (
         <div className="blogpost">
-            <h1>{blog.name}</h1>
-            <h4>{blog.blog}</h4>
+            <h2>{blog.name}</h2>
+            <p>{blog.blog}</p>
             <CommentForm addNewComment={addNewComment} />
             {blog.comments.map((comment, index) => (
-                <li key={index}>
+                <ul key={index}>
                 <CommentComponent index={index}comment={comment} deleteComment={deleteComment}/>
-                </li>
+                </ul>
             ))
         }
         </div>

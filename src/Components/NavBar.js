@@ -4,7 +4,7 @@ import { Link } from "react-router-dom/cjs/react-router-dom";
 export default function Navbar() {
     return (
         <nav className="navbar">
-            <Link to="/" className="navtitle">Alexis's Travel Blog</Link>
+            <Link to="/" className="navtitle">Le Blog</Link>
             <ul>
                 <li>
                     <Link to="/blogs" className="navtext">Blogs</Link>

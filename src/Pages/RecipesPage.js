@@ -3,7 +3,11 @@ import { TextBox } from '../Components/TextBox';
 import { RecipeComponent } from '../Components/RecipeComponent';
 import Accordion from 'react-bootstrap/Accordion';
 import { recipeApi } from '../RecipeApi';
-import React from 'react';
+import React, { useState } from 'react';
+import Button from 'react-bootstrap/Button';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
+import Toast from 'react-bootstrap/Toast';
 
 export default class RecipesPage extends React.Component{
     state = {
@@ -25,10 +29,11 @@ export default class RecipesPage extends React.Component{
     <>
         
             <h1>Recipes</h1>
-            <TextBox loc="There are some amazing foods around the world--let me share some recipes with you!" desc="Pick a recipe below:"/>
+            <TextBox title="Time to Eat!" text="There are some amazing foods around the world--click an option below to learn how to make some global cuisine at home! BONE APPLE TEA!"/>
+            {this.state.recipes.map((recipe) => ( 
             <Accordion>
-            {this.state.recipes.map((recipe) => (     
-                <Accordion.Item eventKey="0">
+                
+                <Accordion.Item eventKey='0'>
                     <Accordion.Header>{recipe.recipename}</Accordion.Header>
                         <Accordion.Body>
                                       
@@ -39,8 +44,9 @@ export default class RecipesPage extends React.Component{
                         
                         </Accordion.Body>
                 </Accordion.Item>
-                  ))}  
+            
             </Accordion>
+                  ))}  
     </>
     );
 }
