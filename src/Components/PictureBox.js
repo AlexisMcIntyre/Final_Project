@@ -12,7 +12,7 @@ export const PictureBox = (props) => {
                 <Container>
                     <Row>
                         <Col xs={3} md={3}>
-                        <Image className="gallery" src={props.num1} rounded fluid />
+                        <Image className="gallery" src={props.num1} rounded />
                         </Col>
                         <Col xs={3} md={3}>
                         <Image className="gallery"  src={props.num2} rounded />

@@ -18,7 +18,7 @@ export default function AboutPage() {
     <>
         <h1>About</h1>
         <TextBox
-            text="Lo and Behold!!!--I'm the original Renaissance Woman!"
+            text="Lo and Behold!!!--I'm the original Renaissance Woman! What about you? Are you a specialist or a generalist? "
         />
         
         <Container>

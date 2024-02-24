@@ -64,7 +64,7 @@ export default function Pictures() {
 
             <TextBox 
                     title="Brazil"
-                    text="A land of funk and family!"
+                    text="A land of funk music and family!"
                 />
 
                 <PictureBox 
