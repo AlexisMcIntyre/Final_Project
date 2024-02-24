@@ -21,6 +21,8 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Toast from 'react-bootstrap/Toast';
 
+//This component uses state soley for the "toast" from React Bootstrap. When the button is clicked, setShow is used to change the state to true which shows the card. A combination of textbox and picturebox is used on this page to make a photo gallery. Props is used to display the pictures.
+
 
 export default function Pictures() {
 

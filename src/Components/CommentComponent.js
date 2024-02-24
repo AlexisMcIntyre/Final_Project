@@ -2,8 +2,10 @@ import React from 'react';
 import LikeButton from './LikeButton';
 import DislikeButton from './DislikeButton';
 
+//Props is used here to receive props from the CommentForm. The comment text is displayed and a button to deleteComment which is a method recieved via props. The comment is deleted based on its index when the user clicks the button.
+
 export const CommentComponent = (props) => {
-    const {comment, deleteComment} = props; //house is all data passed in for house, updateHouse is the method being passed in (called from child class component)
+    const {comment, deleteComment} = props;
     
     return (
             <div className="comment">    

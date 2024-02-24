@@ -4,10 +4,9 @@ import { RecipeComponent } from '../Components/RecipeComponent';
 import Accordion from 'react-bootstrap/Accordion';
 import { recipeApi } from '../RecipeApi';
 import React, { useState } from 'react';
-import Button from 'react-bootstrap/Button';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
-import Toast from 'react-bootstrap/Toast';
+
+//This component lists each individual recipe (generated in RecipeComponent) into a React Bootstrap Accordian. The recipes are listed out from the API using "map". When the page successfully loads, "fetchRecipes" is run, which is an asynchronous function that "gets" the recipes (using the RecipeApi) from the API then sets them as the state. 
+
 
 export default class RecipesPage extends React.Component{
     state = {

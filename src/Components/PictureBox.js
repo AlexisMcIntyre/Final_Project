@@ -4,8 +4,9 @@ import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
 
+//Picturebox accepts props (in the form of pictures to display) from the parent component. Some React Bootstrap styling is used to make evenly spaced rows and columns for the gallery on PicturesPage.
+
 export const PictureBox = (props) => {
-    // const {picture, setPicture} = props; //house is all data passed in for house, updateHouse is the method being passed in (called from child class component)
     
     return (
             <div className="picturebox">    

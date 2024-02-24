@@ -1,5 +1,4 @@
 import React from 'react';
-// import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './Components/NavBar';
 import HomePage from './Pages/HomePage';
@@ -9,6 +8,7 @@ import { BrowserRouter as Router, Route, Switch, Link, useParams } from 'react-r
 import BlogsPage from './Pages/BlogsPage';
 import RecipesPage from './Pages/RecipesPage';
 
+//This App.js page contains all of my React router information which does all the processing when a link is clicked. The Route tells the switchboard which component the view should be switched to. The links themselves are inside of my NavBar component.
 
 export default function App() {
 

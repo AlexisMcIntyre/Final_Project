@@ -12,6 +12,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
+//This is a simple static page that uses React Bootstrap card, row and col for styling. The cards could have been a component but I was experimenting with different code formats.
 
 export default function AboutPage() {
     return (

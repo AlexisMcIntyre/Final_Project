@@ -4,6 +4,8 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
+//The home page is a bit bland, as it is just made up of some textbox components. It passes props to the textbox component.
+
 export default function HomePage() {
     return (
         <>

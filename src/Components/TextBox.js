@@ -1,5 +1,7 @@
 import React from 'react';
 
+//This simple components accepts props from it's parent component in the form of text.
+
 export const TextBox = (props) => {
     
     return (

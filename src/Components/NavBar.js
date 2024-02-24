@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom/cjs/react-router-dom";
 
+//This NavBar component routes to each of my page components using React Router. The "Link to" connects to the router directing on the App.js component.
 
 export default function Navbar() {
     return (
